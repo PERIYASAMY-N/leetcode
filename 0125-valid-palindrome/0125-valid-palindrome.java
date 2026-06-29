@@ -10,19 +10,19 @@ class Solution {
              }
         }
          String k=sb.toString().toLowerCase();
-         String p=sb.reverse().toString().toLowerCase();
-         System.out.print(p);
-         return k.equals(p);
-        //  int l=0;int r=k.length()-1;
-        //  while(l<r)
-        //  { 
-        //     if(k.charAt(l)!=k.charAt(r)) 
-        //     {
-        //         return false;
-        //     }
-        //      l++;
-        //      r--;
-        //  }
-        // return true;
+        //  String p=sb.reverse().toString().toLowerCase();
+        //  System.out.print(p);
+        //  return k.equals(p);
+         int l=0;int r=k.length()-1;
+         while(l<r)
+         { 
+            if(k.charAt(l)!=k.charAt(r)) 
+            {
+                return false;
+            }
+             l++;
+             r--;
+         }
+        return true;
     }
 }
